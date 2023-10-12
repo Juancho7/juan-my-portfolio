@@ -1,14 +1,31 @@
 ---
-
+const links = [
+  { textShown: 'GitHub', link: 'https://github.com/Juancho' },
+  {
+    textShown: 'LinkedIn',
+    link: 'https://www.linkedin.com/in/juan-fernando-ordo%C3%B1ez-martinez-752297264/',
+  },
+  { textShown: 'Download CV', link: '#' },
+];
 ---
 
-<header class=''>
-  <div>Juan Fernando Ordoñez Martinez</div>
+<header class='p-2 flex flex-col sm:flex-row'>
+  <div class='text-center font-semibold'>Juan Fernando Ordoñez Martinez</div>
   <nav>
-    <ul class=''>
-      <li><a href='#'>GitHub</a></li>
-      <li><a href='#'>LinkedIn</a></li>
-      <li><a href='#'>Download CV</a></li>
+    <ul class='flex justify-center gap-x-5'>
+      {
+        links.map((link) => (
+          <li>
+            <a
+              href={link.link}
+              target='_blank'
+              class='hover:text-gray-900 hover:bg-gray-100'
+            >
+              {link.textShown}
+            </a>
+          </li>
+        ))
+      }
     </ul>
   </nav>
 </header>
