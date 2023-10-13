@@ -1,0 +1,42 @@
+---
+const projects = [
+  {
+    projectTitle: 'This Portfolio',
+    repository: 'https://github.com/Juancho7/juan-my-portfolio',
+    img: '',
+    technologies: ['Astro', 'JavaScript', 'TailwindCSS'],
+  },
+  {
+    projectTitle: 'Contacts Crud With Flask',
+    repository: 'https://github.com/Juancho7/contacts-crud-flask',
+    img: 'https://raw.githubusercontent.com/Juancho7/contacts-crud-flask/master/docs/Screenshot.JPG',
+    technologies: ['Flask', 'TailwindCSS'],
+  },
+  {
+    projectTitle: 'Subjects Crud With Django',
+    repository: 'https://github.com/Juancho7/subjects_crud_django',
+    img: '',
+    technologies: ['Django'],
+  },
+
+  { projectTitle: 'Project 1' },
+];
+---
+
+<section class='my-5'>
+  <div>
+    <h2 class='text-xl font-semibold'>Projects</h2>
+    <div class='mt-2 grid grid-cols-2'>
+      {
+        projects.map((project) => (
+          <div class='h-48 text-gray-900 bg-white'>
+            <a href={project.repository} target='_blank'>
+              <img src={project.img} alt={project.img} />
+              {project.projectTitle}
+            </a>
+          </div>
+        ))
+      }
+    </div>
+  </div>
+</section>
