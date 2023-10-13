@@ -1,0 +1,8 @@
+---
+const { skillName, logo } = Astro.props;
+---
+
+<div class='flex items-center gap-x-1 bg-gray-100 text-gray-900'>
+  {skillName}
+  <img src={logo} alt={skillName} class='w-8' />
+</div>

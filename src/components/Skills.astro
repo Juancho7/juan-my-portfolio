@@ -1,0 +1,33 @@
+---
+import Skill from './Skill.astro';
+
+const skills = [
+  { skillName: 'Python', logo: '../../skills/python_icon.svg' },
+  { skillName: 'Django', logo: '../../skills/django_fill_icon.svg' },
+  { skillName: 'Flask', logo: '../../skills/flask_icon.svg' },
+  { skillName: 'SQL', logo: '../../skills/sql_icon.svg' },
+  { skillName: 'TailwindCSS', logo: '../../skills/tailwind_icon.svg' },
+  { skillName: 'HTML', logo: '../../skills/html5__icon.svg' },
+  { skillName: 'CSS', logo: '../../skills/css3_icon.svg' },
+  { skillName: 'JavaScript', logo: '../../skills/javascript_icon.svg' },
+  { skillName: 'FastAPI', logo: '../../skills/fastapi_icon.svg' },
+  { skillName: 'Git', logo: '../../skills/git_icon.svg' },
+  { skillName: 'Astro', logo: '../../skills/astro_icon.svg' },
+  { skillName: 'RegEx', logo: '../../skills/regex_icon.svg' },
+  { skillName: 'GitHub', logo: '../../skills/github_icon.svg' },
+  { skillName: 'Notion', logo: '../../skills/notion_icon.svg' },
+];
+---
+
+<section class='my-5'>
+  <h2 class='text-xl font-semibold'>Skills</h2>
+  <ul class='mt-4 flex flex-wrap gap-x-2'>
+    {
+      skills.map((skill) => (
+        <li>
+          <Skill skillName={skill.skillName} logo={skill.logo} />
+        </li>
+      ))
+    }
+  </ul>
+</section>
