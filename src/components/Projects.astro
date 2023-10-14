@@ -31,10 +31,14 @@ const projects = [
     >
       {
         projects.map((project) => (
-          <div class='h-48 text-gray-900 bg-white'>
-            <a href={project.repository} target='_blank'>
+          <div class='h-60 text-gray-200 bg-gray-800'>
+            <a
+              href={project.repository}
+              target='_blank'
+              class='block h-full w-full'
+            >
               <img src={project.img} alt={project.img} />
-              {project.projectTitle}
+              <p>{project.projectTitle}</p>
             </a>
           </div>
         ))
