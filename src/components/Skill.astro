@@ -1,10 +1,8 @@
 ---
-const { skillName, logo } = Astro.props;
+const { skillName, logo, colors } = Astro.props;
 ---
 
-<div
-  class='p-2 flex items-center gap-x-2 font-medium bg-gray-100 text-gray-900 rounded'
->
+<div class={`p-2 flex items-center gap-x-2 font-medium ${colors} rounded`}>
   {skillName}
   <img src={logo} alt={skillName} class='w-8' />
 </div>
