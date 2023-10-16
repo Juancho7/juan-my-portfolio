@@ -3,7 +3,7 @@ const projects = [
   {
     projectTitle: 'This Portfolio',
     repository: 'https://github.com/Juancho7/juan-my-portfolio',
-    img: '',
+    img: 'https://raw.githubusercontent.com/Juancho7/juan-my-portfolio/master/docs/screenshot.JPG',
     technologies: ['Astro', 'JavaScript', 'TailwindCSS'],
   },
   {
@@ -18,8 +18,12 @@ const projects = [
     img: '',
     technologies: ['Django'],
   },
-
-  { projectTitle: 'Project 1' },
+  {
+    projectTitle: 'Login with Flask and MySQL',
+    repository: 'https://github.com/Juancho7/login_flask_mysql',
+    img: '',
+    technologies: ['Python', 'Flask', 'MySQL'],
+  },
 ];
 ---
 
@@ -27,7 +31,7 @@ const projects = [
   <div>
     <h2 class='text-xl font-semibold'>Projects</h2>
     <div
-      class='mt-2 grid grid-cols-2 md:grid-cols-3 gap-1 rounded overflow-hidden'
+      class='mt-2 grid grid-cols-2 md:grid-cols-3 gap-1 rounded-md overflow-hidden'
     >
       {
         projects.map((project) => (
@@ -37,8 +41,20 @@ const projects = [
               target='_blank'
               class='block h-full w-full'
             >
-              <img src={project.img} alt={project.img} />
-              <p>{project.projectTitle}</p>
+              <img
+                src={project.img}
+                alt={project.img}
+                class='h-3/4 w-full object-cover'
+              />
+              <div class='mt-2 ml-2'>
+                <p class='font-semibold'>{project.projectTitle}</p>
+                <ul class='flex gap-x-2'>
+                  <h3 class='font-semibold'>Technologies:</h3>
+                  {project.technologies.map((technology) => (
+                    <li>{technology}</li>
+                  ))}
+                </ul>
+              </div>
             </a>
           </div>
         ))
