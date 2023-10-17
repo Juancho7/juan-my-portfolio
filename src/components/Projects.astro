@@ -24,6 +24,12 @@ const projects = [
     img: '',
     technologies: ['Python', 'Flask', 'MySQL'],
   },
+  {
+    projectTitle: 'Coding Challenges 2022',
+    repository: 'https://github.com/Juancho7/coding_challenges_2022',
+    img: '',
+    technologies: ['Python'],
+  },
 ];
 ---
 
@@ -31,11 +37,11 @@ const projects = [
   <div>
     <h2 class='text-xl font-semibold'>Projects</h2>
     <div
-      class='mt-2 grid grid-cols-2 md:grid-cols-3 gap-1 rounded-md overflow-hidden'
+      class='mt-2 grid sm:grid-cols-2 md:grid-cols-3 gap-1 rounded-md overflow-hidden'
     >
       {
         projects.map((project) => (
-          <div class='h-60 text-gray-200 bg-gray-800 overflow-hidden'>
+          <div class='h-64 text-gray-200 bg-gray-800 overflow-hidden'>
             <a
               href={project.repository}
               target='_blank'
@@ -46,9 +52,9 @@ const projects = [
                   project.img === '' ? './default_screenshot.PNG' : project.img
                 }
                 alt={project.img}
-                class='h-2/4 md:h-3/4 w-full object-cover'
+                class='h-4/6 sm:h-2/4 md:h-3/4 w-full object-cover'
               />
-              <div class='mt-2 ml-2'>
+              <div class='my-2 mx-2'>
                 <p class='font-semibold'>{project.projectTitle}</p>
                 <div class='flex flex-col md:flex-row md:gap-x-2'>
                   <h3 class='font-semibold'>Technologies:</h3>

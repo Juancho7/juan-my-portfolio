@@ -17,14 +17,14 @@ const links = [
 >
   <div class='text-center font-semibold'>Juan Fernando Ordoñez Martinez</div>
   <nav>
-    <ul class='flex justify-center gap-x-4 sm:gap-x-5'>
+    <ul class='flex justify-center gap-x-2 min-[400px]:gap-x-4 sm:gap-x-5'>
       {
         links.map((link) => (
           <li>
             <a
               href={link.link}
               target='_blank'
-              class='p-1 px-3 rounded-md font-semibold text-gray-200 hover:text-gray-900 bg-gray-800 hover:bg-gray-200 transition-colors'
+              class='p-1 px-3 text-xs min-[400px]:text-base rounded-md font-semibold text-gray-200 hover:text-gray-900 bg-gray-800 hover:bg-gray-200 transition-colors'
             >
               {link.textShown}
             </a>
