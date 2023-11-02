@@ -8,7 +8,6 @@ const links = [
     textShown: 'LinkedIn',
     link: 'https://www.linkedin.com/in/juan-fernando-ordo%C3%B1ez-martinez-752297264/',
   },
-  { textShown: 'Download CV', link: '#' },
 ];
 ---
 
@@ -31,6 +30,15 @@ const links = [
           </li>
         ))
       }
+      <li>
+        <a
+          href='./CV_Juan_Fernando_Ordoñez_Martinez.pdf'
+          download='CV_Juan_Fernando_Ordoñez_Martinez.pdf'
+          class='p-1 px-3 text-xs min-[400px]:text-base rounded-md font-semibold text-gray-200 hover:text-gray-900 bg-gray-800 hover:bg-gray-200 transition-colors'
+        >
+          Download CV
+        </a>
+      </li>
     </ul>
   </nav>
 </header>
