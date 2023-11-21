@@ -54,6 +54,12 @@ const projects = [
     img: '',
     technologies: ['Python', 'Tkinder'],
   },
+  {
+    projectTitle: 'Login With FastAPI and SQLite3',
+    repository: 'https://github.com/Juancho7/login_fastapi_sqlite3',
+    img: '',
+    technologies: ['FastAPI', 'SQLite3', 'Python'],
+  },
 ];
 ---
 
@@ -61,11 +67,11 @@ const projects = [
   <div>
     <h2 class='text-xl font-semibold'>Projects</h2>
     <div
-      class='mt-2 grid sm:grid-cols-2 md:grid-cols-3 gap-1 rounded-md overflow-hidden'
+      class='mt-2 grid sm:grid-cols-2 md:grid-cols-3 gap-1 md:gap-2 overflow-hidden'
     >
       {
         projects.map((project) => (
-          <div class='h-64 text-gray-200 bg-gray-800 overflow-hidden'>
+          <div class='h-64 text-gray-200 bg-gray-800 rounded-md overflow-hidden'>
             <a
               href={project.repository}
               target='_blank'
