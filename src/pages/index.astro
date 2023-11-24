@@ -6,15 +6,15 @@ import Projects from '../components/Projects.astro';
 
 <Layout>
   <div
-    class='my-5 flex justify-between md:justify-normal gap-x-5 md:gap-x-14 items-center'
+    class='my-5 flex max-[500px]:flex-col justify-between md:justify-normal gap-x-5 md:gap-x-14 max-[500px]:gap-y-5 items-center'
   >
-    <div>
+    <div class='max-[500px]:order-2'>
       <h1 class='text-2xl font-semibold'>Hello! my name is Juan</h1>
       <p class='mt-1 mb-5'>I'm a Junior Backend Developer.</p>
       <a
         href='./CV_Juan_Fernando_Ordoñez_Martinez.pdf'
         download='CV_Juan_Fernando_Ordoñez_Martinez.pdf'
-        class='p-1 px-3 text-xs min-[400px]:text-base rounded-md font-semibold text-gray-200 hover:text-gray-900 bg-gray-800 hover:bg-gray-200 transition-colors'
+        class='max-[500px]:block max-[500px]:p-2 p-1 px-4 text-xs min-[400px]:text-base text-center rounded-md font-semibold text-gray-200 hover:text-gray-900 bg-gray-800 hover:bg-gray-200 transition-colors'
       >
         Download CV
       </a>
@@ -22,7 +22,7 @@ import Projects from '../components/Projects.astro';
     <img
       src='./my_photo.png'
       alt='My Photo'
-      class='w-32 md:w-36 rounded-full'
+      class='max-[500px]:order-1 w-32 md:w-36 rounded-full'
     />
   </div>
   <section class='my-5'>
