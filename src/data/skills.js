@@ -25,6 +25,11 @@ const skills = [
     colors: 'text-gray-800 bg-gray-200',
   },
   {
+    skillName: 'MySQL',
+    logo: './mysql_icon.svg',
+    colors: 'text-orange-600 bg-orange-100',
+  },
+  {
     skillName: 'HTML',
     logo: './html5__icon.svg',
     colors: 'text-orange-800 bg-orange-200',

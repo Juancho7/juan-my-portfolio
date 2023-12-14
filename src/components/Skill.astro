@@ -3,8 +3,8 @@ const { skillName, logo, colors } = Astro.props;
 ---
 
 <div
-  class={`p-2 flex max-[500px]:justify-center items-center gap-x-2 font-medium ${colors} rounded`}
+  class={`h-full p-2 flex max-[500px]:justify-center items-center gap-x-2 font-medium ${colors} rounded`}
 >
-  {skillName}
+  <span>{skillName}</span>
   <img src={logo} alt={skillName} class='w-8' />
 </div>

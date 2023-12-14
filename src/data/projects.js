@@ -33,7 +33,7 @@ const projects = [
       projectTitle: '5 JavaScript Vanilla Projects',
       repository: 'https://github.com/Juancho7/javascript-vanilla-projects',
       img: '',
-      technologies: ['JavaScript, HTML, CSS'],
+      technologies: ['JavaScript', 'HTML', 'CSS'],
     },
     {
       projectTitle: 'API Rest with FastAPI',
@@ -60,7 +60,7 @@ const projects = [
       technologies: ['FastAPI', 'SQLite3', 'Python'],
     },
     {
-      projectTitle: 'Todo App With React and LocalStorage',
+      projectTitle: 'Todo App With React',
       repository: 'https://github.com/Juancho7/todo_react_localstorage',
       img: '',
       technologies: ['React', 'TailwindCSS', 'JavaScript'],
