@@ -1,0 +1,29 @@
+---
+import certificates from '../data/certificates.js';
+---
+
+<section>
+  <h1 class='text-3xl font-semibold text-gray-200'>Certificates</h1>
+  <p class='mt-1 mb-4 text-gray-200'>
+    You can see some certificates that I have gotten in this page.
+  </p>
+</section>
+
+<section>
+  <ul class='flex flex-col gap-y-4 sm:gap-y-5 text-gray-200'>
+    {
+      certificates.map((certificate) => (
+        <li class='pb-2 border-b border-gray-300 flex flex-col sm:flex-row gap-y-1 sm:justify-between'>
+          <h2 class='text-lg font-semibold'>{certificate.title}</h2>
+          <a
+            href={certificate.urlToVisit}
+            target='_blank'
+            class='max-[500px]:block max-[500px]:p-2 p-1 px-4 text-xs min-[400px]:text-base text-center rounded-md font-semibold text-gray-200 hover:text-gray-900 bg-gray-800 hover:bg-gray-200 transition-colors'
+          >
+            See Url
+          </a>
+        </li>
+      ))
+    }
+  </ul>
+</section>

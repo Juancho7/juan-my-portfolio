@@ -6,7 +6,7 @@ import Projects from '../components/Projects.astro';
 ---
 
 <Layout>
-  <div
+  <section
     class='my-5 flex max-[500px]:flex-col justify-between md:justify-normal gap-x-5 md:gap-x-14 max-[500px]:gap-y-5 items-center'
   >
     <div class='max-[500px]:order-2'>
@@ -25,15 +25,21 @@ import Projects from '../components/Projects.astro';
       alt='My Photo'
       class='max-[500px]:order-1 w-32 md:w-36 rounded-full'
     />
-  </div>
+  </section>
   <section class='my-5'>
     <h2 class='text-xl font-semibold'>About Me</h2>
-    <p class='mt-1'>
+    <p class='mt-1 mb-7'>
       A committed person, responsible, and lifelong learner. I am guided by
       discipline and honesty. I have a spirit of leadership and keep calm when
       working under pressure. I relate easily to working as a team to accomplish
       the institution's goals.
     </p>
+    <a
+      href='/certificates'
+      class='max-[500px]:block max-[500px]:p-2 p-1 px-4 text-xs min-[400px]:text-base text-center rounded-md font-semibold text-gray-200 hover:text-gray-900 bg-gray-800 hover:bg-gray-200 transition-colors'
+    >
+      See Certificates
+    </a>
   </section>
   <Skills />
   <Languajes />
