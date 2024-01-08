@@ -2,7 +2,7 @@ const skills = [
   {
     skillName: 'JavaScript',
     logo: './javascript_icon.svg',
-    colors: 'text-yellow-900 bg-yellow-300',
+    colors: 'text-yellow-400 bg-yellow-900',
   },
   {
     skillName: 'Astro',

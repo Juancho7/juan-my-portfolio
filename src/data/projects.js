@@ -11,6 +11,12 @@ const projects = [
     img: 'https://github.com/Juancho7/tasks-crud-react/blob/master/docs/screenshot.PNG?raw=true',
     technologies: ['React', 'JavaScript', 'TailwindCSS', 'HTML'],
   },
+  {
+    projectTitle: 'Frontend Mentor Challenges',
+    repository: 'https://github.com/Juancho7/frontend-mentor-challenges-astro',
+    img: 'https://raw.githubusercontent.com/Juancho7/frontend-mentor-challenges-astro/master/docs/screenshot.PNG',
+    technologies: ['Astro', 'JavaScript', 'TailwindCSS', 'HTML'],
+  },
   /* {
       projectTitle: 'Contacts Crud With Flask',
       repository: 'https://github.com/Juancho7/contacts-crud-flask',
