@@ -5,6 +5,16 @@ const skills = [
     colors: 'text-yellow-400 bg-yellow-900',
   },
   {
+    skillName: 'Node.js',
+    logo: '/node.svg',
+    colors: 'text-green-200 bg-green-900',
+  },
+  {
+    skillName: 'Express.js',
+    logo: '/node.svg',
+    colors: 'text-green-200 bg-green-950',
+  },
+  {
     skillName: 'Astro',
     logo: './astro_icon.svg',
     colors: 'text-orange-50 bg-orange-700',
